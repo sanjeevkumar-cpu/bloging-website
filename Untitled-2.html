@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>/* Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+        
+        /* General Styles */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        
+        h1, h2, h3 {
+            font-family: 'Lora', serif;
+        }
+        
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            overflow: auto;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        header h1 {
+            margin: 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        /* Main Content and Sidebar */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        
+        main {
+            flex: 0 0 65%;
+            padding: 1rem;
+            background-color: #fff;
+            margin-bottom: 1rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        aside {
+            flex: 0 0 30%;
+            padding: 1rem;
+            background-color: #fff;
+            margin-bottom: 1rem;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        
+        /* Blog Post */
+        article {
+            margin-bottom: 2rem;
+        }
+        
+        article h2 {
+            color: #333;
+        }
+        
+        .post-meta {
+            color: #777;
+            font-size: 0.9rem;
+        }
+        
+        article img {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+        }
+        
+        /* Sidebar */
+        .sidebar-section {
+            margin-bottom: 2rem;
+        }
+        
+        .sidebar-section h3 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .sidebar-section p, .sidebar-section ul {
+            color: #555;
+        }
+        
+        .sidebar-section ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .sidebar-section ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .sidebar-section ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        
+        /* Social Links */
+        .social-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .social-links li {
+            margin-right: 10px;
+        }
+        
+        .social-links li a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+        }
+        
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+        }
+        
+        footer p {
+            margin: 0;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            main, aside {
+                flex: 0 0 100%;
+            }
+        
+            nav ul li {
+                display: block;
+                margin: 5px 0;
+            }
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>My Personal Blog</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <main>
+            <article>
+                <h2>Blog Post Title</h2>
+                <p class="post-meta">Posted on <time datetime="2024-05-29">May 29, 2024</time> by <a href="#">Author Name</a></p>
+                <img src="C:\Users\Admin\Downloads\coding-background-9izlympnd0ovmpli.jpg" alt="Blog post image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia lorem at nisi fringilla, et cursus metus laoreet. Aliquam erat volutpat.</p>
+                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </article>
+
+            <article>
+                <h2>Another Blog Post Title</h2>
+                <p class="post-meta">Posted on <time datetime="2024-05-28">May 28, 2024</time> by <a href="#">Author Name</a></p>
+                <img src="C:\Users\Admin\Downloads\istockphoto-1352603244-612x612.jpg" alt="Blog post image">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia lorem at nisi fringilla, et cursus metus laoreet. Aliquam erat volutpat.</p>
+                <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </article>
+        </main>
+
+        <aside>
+            <div class="sidebar-section">
+                <h3>About Me</h3>
+                <p>Hello! I'm a passionate blogger sharing my thoughts and experiences. Welcome to my personal space on the web.</p>
+            </div>
+            <div class="sidebar-section">
+                <h3>Recent Posts</h3>
+                <ul>
+                    <li><a href="#">Blog Post Title 1</a></li>
+                    <li><a href="#">Blog Post Title 2</a></li>
+                    <li><a href="#">Blog Post Title 3</a></li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3>Follow Me</h3>
+                <ul class="social-links">
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Sanjeev Kumar. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
